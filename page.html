@@ -50,9 +50,14 @@
     <h1><mark>Welcome to My web page</mark></h1>
     <div class="header">
         <ul class="nav">
+          <h1>Unodered List</h1>
            <li><a href="/">Home</a></li>
+           <!-- and you do this when you have it all on same page -->
             <li><a href="#about">About me</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <!-- in case you gave this page you can doing it like that -->
+            <!-- <li><a href="#contact.html">Contact Us</a></li> -->
+
             <li><a href="#project">Project</a></li>
             <li><a target="_blank" href="/contact.html">Contact</a></li>
            
@@ -89,9 +94,13 @@
     <form action="/contact.html">
         <label for="User">Username</label>
         <input 
+        minlength="5"
+        maxlength="25"
         name="User"
         type="text" id="User"
         placeholder="Enter your Username"
+        required
+        
 
         >
         <label for="">Email</label>
@@ -99,10 +108,78 @@
         name="email"
         type="email"
         placeholder="Enter Your Email"
+        required
         >
+        <select name="products" id="product">
+            <option value=""></option>
+            <option value="">milk</option>
+            <option value="">juice</option>
+            <option value="">bisuits</option>
+            <option value="">Fanta</option>
+            <option value="">Riqour</option>
 
+        </select>
+         <label for="message">Message</label>
+         <textarea name="message" id="message"></textarea>
         <button type="submit">Submit</button>
     </form>
     <a target="_blank" href="/contact.html">Link me to another page</a>
+
+    <form>
+
+        <input type="radio" name="gender" value="">
+        <input type="radio" name="products" value="juice">
+        <input type="radio" name="products" value="water">
+        <input type="radio" name="products" value="Riqour">
+        <input type="radio" name="products" value="amazon">
+        <input type="radio" name="products" value="milk1">
+<button type="submit">Submit</button>
+    </form>
+
+    <h1>Orded List</h1>
+    <ol>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About Me</li>
+    </ol>
+
+    <ol>
+        <li>Chapter one</li>
+
+        <ol>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+
+        </ol>
+        <li>Chapter Two</li>
+
+        <ol>
+            <li>About Me</li>
+            <li>About Me</li>
+            <li>About Me</li>
+            <li>About Me</li>
+        </ol>
+    </ol> 
+
+    <h1>Tables Form</h1>
+    <table>
+        <tr>
+            <th>FirstName</th>
+            <th>LastNAme</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <th>Rachel</th>
+            <th>Niyonagize</th>
+            <th>niyona@gmail.com</th>
+            <th>25</th>
+            <th>Female</th>
+        </tr>
+    </table>
+
 </body>
 </html>
